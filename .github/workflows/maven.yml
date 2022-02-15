@@ -31,5 +31,5 @@ jobs:
           ref: main
           repo: sandeepskudva/e2e 
           workflow: e2eTest
-          inputs: '{ "env": "STG", "debug": true }'
+          inputs: '{ "env": "STG"}'
           token: ${{ secrets.PAT_TOKEN }}
