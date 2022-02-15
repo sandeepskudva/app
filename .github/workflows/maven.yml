@@ -27,5 +27,6 @@ jobs:
       uses: benc-uk/workflow-dispatch@v1
       with:
           ref: main
+          repo: sandeepskudva/e2e 
           workflow: e2eTest
           token: ${{ secrets.PAT_TOKEN }}
