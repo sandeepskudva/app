@@ -22,3 +22,10 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -Denv=QA clean install
+      
+    - name: Trigger e2e tests
+      uses: benc-uk/workflow-dispatch@v1
+      with:
+          ref: main
+          workflow: Java CI with Maven
+          token: ${{ secrets.PAT_TOKEN }}
