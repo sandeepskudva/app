@@ -26,6 +26,7 @@ jobs:
     - name: Trigger e2e tests
       uses: benc-uk/workflow-dispatch@v1
       with:
+          ref: master
           repo: sandeepskudva/e2e 
           workflow: e2eTest
           token: ${{ secrets.PAT_TOKEN }}
