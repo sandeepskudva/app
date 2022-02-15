@@ -6,10 +6,7 @@ name: CrossRepo
 on:
   push:
   pull_request:
-  workflow_dispatch: 
-    inputs: 
-        msg:
-          description: dispatched
+  
       
 
 jobs:
