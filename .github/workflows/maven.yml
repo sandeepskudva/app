@@ -27,5 +27,5 @@ jobs:
       uses: benc-uk/workflow-dispatch@v1
       with:
           ref: main
-          workflow: Java CI with Maven
+          workflow: e2eTest
           token: ${{ secrets.PAT_TOKEN }}
